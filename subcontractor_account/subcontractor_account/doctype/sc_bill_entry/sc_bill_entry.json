@@ -1,0 +1,240 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-23 12:49:47.654833",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_details_section",
+  "project_name",
+  "column_break_gmjr",
+  "column_break_ypbn",
+  "subcontractor_section",
+  "company_name",
+  "column_break_msrn",
+  "vat_no",
+  "column_break_krzu",
+  "code",
+  "column_break_luro",
+  "work_order",
+  "date_of_preparation",
+  "summary_account_section",
+  "running_account_bill_no",
+  "column_break_poxc",
+  "date",
+  "column_break_bekb",
+  "column_break_vzzn",
+  "summary_sheet_section",
+  "total_boq_amount",
+  "sundry_cost_miscellaneous_cost",
+  "addition_and_deduction_maintenance",
+  "column_break_opqn",
+  "total_amount_without_vat",
+  "vat",
+  "vat_amount",
+  "total_amount_with_vat",
+  "column_break_mheu",
+  "advance_deduction",
+  "tds_15_deduction",
+  "deduction_amount",
+  "column_break_ijjd",
+  "total_payable_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "summary_sheet_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_boq_amount",
+   "fieldtype": "Currency",
+   "label": "Total BOQ Amount"
+  },
+  {
+   "fieldname": "column_break_mheu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sundry_cost_miscellaneous_cost",
+   "fieldtype": "Currency",
+   "label": "Sundry Cost (Miscellaneous Cost)"
+  },
+  {
+   "fieldname": "column_break_ijjd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_opqn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "addition_and_deduction_maintenance",
+   "fieldtype": "Currency",
+   "label": "Addition and Deduction Maintenance"
+  },
+  {
+   "default": "13",
+   "fieldname": "vat",
+   "fieldtype": "Percent",
+   "label": "VAT%",
+   "precision": "2"
+  },
+  {
+   "bold": 1,
+   "fieldname": "total_amount_with_vat",
+   "fieldtype": "Currency",
+   "label": "Total Amount with VAT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "advance_deduction",
+   "fieldtype": "Currency",
+   "label": "Advance Deduction"
+  },
+  {
+   "default": "1.5",
+   "fieldname": "tds_15_deduction",
+   "fieldtype": "Percent",
+   "label": "TDS 1.5% deduction",
+   "precision": "2"
+  },
+  {
+   "bold": 1,
+   "fieldname": "total_amount_without_vat",
+   "fieldtype": "Currency",
+   "label": "Total Amount without VAT",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_payable_amount",
+   "fieldtype": "Currency",
+   "label": "Toatl Payable Amount",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.total_amount_without_vat != undefined",
+   "fieldname": "vat_amount",
+   "fieldtype": "Currency",
+   "label": "VAT Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deduction_amount",
+   "fieldtype": "Currency",
+   "label": "Deduction Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "project_details_section",
+   "fieldtype": "Section Break",
+   "label": "Project Details"
+  },
+  {
+   "fieldname": "column_break_gmjr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "column_break_ypbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subcontractor_section",
+   "fieldtype": "Section Break",
+   "label": "Subcontractor"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Link",
+   "label": "Company Name",
+   "options": "Subcontractor"
+  },
+  {
+   "fieldname": "column_break_msrn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vat_no",
+   "fieldtype": "Data",
+   "label": "VAT No."
+  },
+  {
+   "fieldname": "column_break_krzu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "Code"
+  },
+  {
+   "fieldname": "column_break_luro",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "label": "Work Order"
+  },
+  {
+   "fieldname": "date_of_preparation",
+   "fieldtype": "Data",
+   "label": "Date of Preparation"
+  },
+  {
+   "fieldname": "summary_account_section",
+   "fieldtype": "Section Break",
+   "label": "Summary Account"
+  },
+  {
+   "fieldname": "running_account_bill_no",
+   "fieldtype": "Int",
+   "label": "Running Account Bill No:"
+  },
+  {
+   "fieldname": "column_break_poxc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_bekb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vzzn",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-23 16:50:57.994058",
+ "modified_by": "Administrator",
+ "module": "Subcontractor Account",
+ "name": "SC Bill Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

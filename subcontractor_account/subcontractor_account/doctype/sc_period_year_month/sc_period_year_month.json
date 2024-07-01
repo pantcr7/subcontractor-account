@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{year}-{month}",
+ "creation": "2024-06-23 12:24:44.630616",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "period_date_section",
+  "year",
+  "column_break_pyih",
+  "month",
+  "column_break_wykc"
+ ],
+ "fields": [
+  {
+   "fieldname": "period_date_section",
+   "fieldtype": "Section Break",
+   "label": "Period Date"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year"
+  },
+  {
+   "fieldname": "column_break_pyih",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "Baisakh\nJestha\nAsar\nShrawan\nBhadra\nAshwin\nKartik\nMangsir\nPoush\nMagh\nFalgun\nChaitra"
+  },
+  {
+   "fieldname": "column_break_wykc",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-23 12:44:08.919614",
+ "modified_by": "Administrator",
+ "module": "Subcontractor Account",
+ "name": "SC Period Year Month",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

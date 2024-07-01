@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-23 12:06:01.288747",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_details_section",
+  "subcontractor_type",
+  "column_break_ednb",
+  "company_name",
+  "column_break_cdqh",
+  "vat_no",
+  "column_break_ovyr",
+  "code"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_details_section",
+   "fieldtype": "Section Break",
+   "label": "General Details"
+  },
+  {
+   "fieldname": "subcontractor_type",
+   "fieldtype": "Select",
+   "label": "subcontractor Type",
+   "options": "Concrete Subcontractors\nMasonry Subcontractors:"
+  },
+  {
+   "fieldname": "column_break_ednb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "column_break_cdqh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vat_no",
+   "fieldtype": "Data",
+   "label": "VAT no."
+  },
+  {
+   "fieldname": "column_break_ovyr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-23 16:12:02.377213",
+ "modified_by": "Administrator",
+ "module": "Subcontractor Account",
+ "name": "Subcontractor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "company_name"
+}
